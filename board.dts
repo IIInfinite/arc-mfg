@@ -1,0 +1,113 @@
+/dts-v1/;
+/ {
+    MFG_DATA {
+        SERIAL_NUMBER {
+            value = "SN";
+            type = "string";
+        };
+        BASE_MAC_ADDRESS {
+             value = [0C 17 16 22 17 12];
+           type = "raw";
+        };
+        MANUFACTURER {
+            value = "qcom";
+            type = "string";
+        };
+        MANUFACTURER_OUI {
+            value = [12 34 56];
+            type = "raw";
+        };
+        MANUFACTURER_URL {
+            value = "'http://prplfoundation.org/'";
+            type = "string";
+        };
+        MODEL_NAME {
+            value = "Qualcomm Technologies, Inc. IPQ9574/AP-AL02-C4";
+            type = "string";
+        };
+        PRODUCT_CLASS {
+            value = "ipq9574-ap-al02-c4";
+            type = "string";
+        };
+        HARDWARE_VERSION {
+            value = "ipq95xx/ipq95xx_32";
+            type = "string";
+        };
+        BOOTLOADER_VERSION {
+            value = "1.0.0_a.b.c";
+            type = "string";
+        };
+        WLAN_PASSPHRASE_2.4G {
+            value = "123456789abc";
+            type = "string";
+            to_cipher;
+            signature {
+                key_index = <0x10>;
+            };
+            cipher {
+                key_index = <0x0>;
+                algo = "aes";
+                mode = "cbc";
+            };
+        };
+        WLAN_SSID_2.4G {
+            value = "PRPL_2.4G";
+            type = "string";
+        };
+        WLAN_PASSPHRASE_5G {
+            value = "123456789abc";
+            type = "string";
+            to_cipher;
+            signature {
+                key_index = <0x10>;
+            };
+            cipher {
+                key_index = <0x0>;
+                algo = "aes";
+                mode = "cbc";
+            };
+        };
+        WLAN_SSID_5G {
+            value = "PRPL_5G";
+            type = "string";
+        };
+        WLAN_PASSPHRASE_6G {
+            value = "123456789abc";
+            type = "string";
+            to_cipher;
+            signature {
+                key_index = <0x10>;
+            };
+            cipher {
+                key_index = <0x0>;
+                algo = "aes";
+                mode = "cbc";
+            };
+        };
+        WLAN_SSID_6G {
+            value = "PRPL_6G";
+            type = "string";
+        };
+        PON_SERIAL {
+            value = "ALCLB30B1A03";
+            type = "raw";
+        };
+        BACKHAUL_SSID {
+            value = "PRPL_BACKHAUL_MESH";
+            type = "string";
+        };
+        BACKHAUL_PASSPHRASE {
+            value = "123456";
+            type = "string";
+        };
+        GPON_SN {
+            value = "QCA1234";
+            type = "raw";
+        };
+        GPON_PASSWD {
+            value = "12345678";
+            type = "raw";
+        };
+    };
+
+};
